@@ -1,4 +1,4 @@
-FROM node:12
+FROM node:12.22.12
 ## Create app directory
 WORKDIR /usr/src/app
 ## Install app dependencies
