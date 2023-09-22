@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: env-config
+data:
+  AWS_BUCKET: "thinesh-microservice-bucket"
+  AWS_PROFILE: "default"
+  AWS_REGION: "us-east-1"
+  JWT_SECRET: "testing"
+  POSTGRES_DB: "postgres"
+  POSTGRES_HOST: "my-udacity.ch4chmfvqgzy.us-east-1.rds.amazonaws.com"
+  URL: "http://a18db4bc3632f420d99f84e4d6f73284-963788266.us-east-1.elb.amazonaws.com"
