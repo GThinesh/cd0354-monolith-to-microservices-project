@@ -1,10 +1,9 @@
 import AWS = require('aws-sdk');
 import {config} from './config/config';
-import {Credentials} from "aws-sdk";
 
 
 // Configure AWS
-const credentials = new Credentials(process.env.AWS_ACCESS_KEY_ID, process.env.AWS_SECRET_ACCESS_KEY);
+const credentials = new AWS.SharedIniFileCredentials({profile: config.aws_profile});
 AWS.config.credentials = credentials
 console.log(credentials)
 
